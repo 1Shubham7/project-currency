@@ -17,7 +17,7 @@ type Item struct {
 	UnitPrice *money.Money
 }
 
-func (o Order) ComuteTotal() (*money.Money, error) {
+func (o Order) ComputeTotal() (*money.Money, error) {
 	amount := money.New(0, o.CurrencyAlphaCode)
 	for _, item := range o.Items {
 		var err error
