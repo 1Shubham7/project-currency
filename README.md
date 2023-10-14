@@ -35,6 +35,8 @@ The term "unit" in unit testing refers to the smallest testable part of a softwa
 
 **Step 3.** Create this file structure:
 
+![a23644aa-ded1-4755-8ef1-79c75cd5b136](https://github.com/1Shubham7/project-currency/assets/116020663/6bac4247-0a73-4d3d-a61d-1f087c952d49)
+
 Create a internal folder, inside that create a order folder, and inside the order folder, create a order.go file.
 
 **Step 4.** Start coding in the order.go file
