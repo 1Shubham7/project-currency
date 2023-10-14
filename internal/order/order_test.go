@@ -22,6 +22,6 @@ func TestOrder(t *testing.T) {
 }
 	total, err := o.ComputeTotal()
 	assert.NoError(t, err)
-	assert.Equal(t, 200, total.Amount())
-	assert.Equal(t, "INR", total.Currency())
+	assert.Equal(t, int64(200), total.Amount())
+	assert.Equal(t, "INR", total.Currency().Code)
 }

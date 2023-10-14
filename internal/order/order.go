@@ -21,7 +21,7 @@ func (o Order) ComputeTotal() (*money.Money, error) {
 	amount := money.New(0, o.CurrencyAlphaCode)
 	for _, item := range o.Items {
 		var err error
-		amount, err = amount.Add(item.UnitPrice)
+		amount, err = amount.Add(item.UnitPrice.Multiply(int64(item.Quantity)))
 		if err!= nil {
 			return nil, fmt.Errorf("not adding item elements, error: %w", err)
 		}
